@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
+button{
+    cursor: pointer;
+    margin-top: 20px
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input {
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    max-height:200px ;
+    max-width: 150px;
+    min-height: 50px;
+}
