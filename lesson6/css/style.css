@@ -17,21 +17,22 @@ a {
     color: black;
 }
 
-.container {
-    max-width: 1320px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 .header {
     padding: 20px 0;
     border-bottom: 1px solid #868686;
+    
 }
 
 .header_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
 }
 
 .logo {
@@ -44,8 +45,5 @@ a {
 .menu {
     display: flex;
     gap: 30px;
-}
-
-.menu-it {
-text-decoration: underline;
+    text-decoration: underline;
 }
