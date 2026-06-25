@@ -4,11 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fit Studio - Открытие нового филиала!</title>
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="stylesheet" href="./css/article.css" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="./css/globals.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			sizes="128x128"
+			href="./images/favicon-icon.svg"
+		/>
 	</head>
 	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-inner">
+					<a href="/">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio "
+						/>
+					</a>
+					<div class="phone">
+						<p>первое посещение бесплатно</p>
+						<a href="tel:+79282822882">+7 (928) 282-28-82</a>
+					</div>
+				</div>
+			</div>
+		</header>
 		<article class="article">
 			<div class="container">
 				<h1 class="article-title article-title-large">
@@ -28,12 +56,7 @@
 					желаемых результатов. Клиенты могут также воспользоваться услугами
 					персональных тренировок и консультаций по здоровому образу жизни.
 				</p>
-				<div class="article-decor-wrapper article-mb-1">
-					<img
-						class="article-decor article-decor-1"
-						src="./images/decor-icon.svg"
-						alt="Декорация в виде точек"
-					/>
+				<div class="article-decor-wrapper article-decor-wrapper-1 article-mb-1">
 					<img
 						class="article-img"
 						src="./images/gym-img.jpg"
@@ -79,5 +102,31 @@
 				</p>
 			</div>
 		</article>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<a class="footer-logo" href="/">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio "
+						/>
+					</a>
+					<nav class="menu">
+						<ul>
+							<li><a href="#">клубы</a></li>
+							<li><a href="#">тренировки</a></li>
+							<li><a href="#">абонименты</a></li>
+							<li><a href="#">программа лояльности</a></li>
+							<li><a href="#">контакты </a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="container">
+				<p class="Copyright">&copy; Copyright. Все права защищены</p>
+			</div>
+		</footer>
 	</body>
 </html>
