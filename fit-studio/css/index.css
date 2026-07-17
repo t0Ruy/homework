@@ -10,7 +10,7 @@
     z-index: -1;
     width: 100%;
     height: 48px;
-    background: url("../images/decor-large-icon.svg");
+    background: url("../images/decor-large-icon.svg") repeat-x;
 }
 
 .hero-container {
@@ -111,6 +111,62 @@ color: #3596ed;
 }
 
 
+.faq {
+    position: relative;
+}
+
+.faq::before {
+    content: "";
+    position: absolute;
+    top: 215px;
+    z-index: -1;
+    width: calc(50% - 250px);
+    height: 48px;
+    background: url("../images/decor-large-icon.svg") repeat-x;
+}
+
+
 .news-link:hover::after{
     transform: translateX(5px);
+}
+
+.faq-container {
+    display: flex;
+    gap: 28px;
+}
+
+details {
+    margin-bottom: 20px;
+    border-block: 1px solid #d3cbd9 ;
+}
+
+summary::after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    background: url(../images/arrow-down-icon.svg) no-repeat center /cover;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+summary::-webkit-details-marker {
+display: none;
+}
+
+details > p {
+    padding: 0 20px;
 }
