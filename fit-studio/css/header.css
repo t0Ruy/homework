@@ -25,6 +25,7 @@
     font-size: 18px;
     color: #2c332f;
     transition: color 0.2s;
+    text-decoration: none;
 }
 
 .phone a:hover {

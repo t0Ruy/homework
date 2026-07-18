@@ -38,6 +38,7 @@ p {
     line-height: 130%;
     color: #535755;
     user-select: none;
+    padding: 20px 20px;
 }
 
 .button {
@@ -68,6 +69,7 @@ button.button:disabled {
 }
 
 .section {
+  display: none;
   margin-bottom: 140px;
 }
 
