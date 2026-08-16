@@ -1,9 +1,4 @@
-.burger {
-  width: 24px;
-  height: 24px;
-}
-
-@media (width >768px) {
+@media (width > 768px) {
   .burger {
     display: none;
   }
