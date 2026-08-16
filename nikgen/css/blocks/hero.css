@@ -19,8 +19,7 @@
   display: flex;
   flex-direction: column;
   /* min-width 433px, max-width 992px */
-  min-height: clamp(433px, 15.325rem + 50.08vw, 992px);
-  /* min-height: 742px; */
+  min-height: clamp(433px, 15.325rem + 50.08vw, 742px);
 }
 
 @media (width > 768px) {
@@ -87,6 +86,7 @@
 
 .hero__title {
   display: flex;
+  justify-content: center;
   /* min-width 375px, max-width 1920px */
   gap: clamp(8px, 0.09rem + 1.75vw, 35px);
   justify-content: center;

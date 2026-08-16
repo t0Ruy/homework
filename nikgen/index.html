@@ -31,7 +31,7 @@
         >
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#air mag" lang="en">Air Mag</a>
+              <a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#sizes">Размеры</a>
@@ -104,16 +104,20 @@
               Nike <span class="hero__title-accent"> air </span> mag
             </h1>
           </header>
-          <img
-            class="hero__img"
-            src="./images/nike-air-mag.png"
-            width="846"
-            height="713"
-            alt="кросовок Nike Air Mag c желтым кольцом под подошвой"
-          />
+          <picture>
+            <source srcset="./images/nike-air-mag-1.webp" type="image/webp" />
+            <img
+              class="hero__img"
+              src="./images/nike-air-mag-1.png"
+              width="846"
+              height="713"
+              loading="eager"
+              alt="кросовок Nike Air Mag c желтым кольцом под подошвой"
+            />
+          </picture>
           <footer class="hero__footer">
-            <a class="hero__details" href="#"
-              >Подробнее
+            <a class="hero__details" href="#">
+              Подробнее
               <svg width="12" height="10">
                 <use
                   class="hero__details-icon"
@@ -122,6 +126,39 @@
               </svg>
             </a>
           </footer>
+        </div>
+      </section>
+      <section id="air-mag" class="air-mag">
+        <div class="container">
+          <h2 class="air-mag__title title-md">Air-mag</h2>
+          <p class="air-mag__description text-regular">
+            Это не просто кроссовки — это шаг в будущее. С уникальным дизайном и
+            передовыми технологиями, эти кроссовки вдохновлены легендарной
+            киноделией и готовы сопровождать вас в любых приключениях.
+          </p>
+          <div class="air-mag__info-wrapper">
+            <picture>
+              <source srcset="./images/nike-air-mag-2.webp" type="image/webp" />
+              <img
+                class="air-mag__img"
+                src="./images/nike-air-mag-2.png"
+                width="911"
+                height="635"
+                loading="lazy"
+                alt="кросовок Nike Air Mag c желтым кольцом под подошвой"
+              />
+            </picture>
+            <ul class="air-mag__info-list text-light">
+              <li class="air-mag__info-item">
+                инновационная технология амортизации, которая обеспечивает
+                непревзойденную поддержу суставов
+              </li>
+              <li class="air-mag__info-item">
+                высококачественные синтетические материалы для долговечности
+                и комфорта
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
