@@ -41,6 +41,7 @@ button:focus-visible {
 .text-regular {
   font-weight: 400;
 }
+.title-xs,
 .title-sm,
 .title-md {
   font-weight: 600;
@@ -58,12 +59,16 @@ button:focus-visible {
   font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
 }
 
+.title-xs {
+  font-size: 18px;
+}
+
 @media (width > 576px) {
   .section {
     padding-bottom: 140px;
   }
 
-  .section__title {
+  .section-title {
     margin-bottom: 40px;
   }
 }
