@@ -4,12 +4,14 @@
   color: var(--main-color);
   scroll-behavior: smooth;
   scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
 }
 
 .page__body {
   min-width: 375px;
   background-color: var(--bg-color);
 }
+
 .page__body--no-scroll {
   overflow-y: hidden;
 }
@@ -24,16 +26,19 @@ img {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus {
   outline: 1px solid var(--accent-color);
   outline-offset: 2px;
 }
+
 .text-light,
 .text-regular {
   font-size: 16px;
   line-height: 140%;
   color: var(--main-color);
 }
+
 .text-light {
   font-weight: 300;
 }
@@ -41,6 +46,7 @@ button:focus-visible {
 .text-regular {
   font-weight: 400;
 }
+
 .title-xs,
 .title-sm,
 .title-md {
@@ -78,7 +84,7 @@ button:focus-visible {
     padding-bottom: 80px;
   }
 
-  .section__title {
+  .section-title {
     margin-bottom: 30px;
   }
 }
