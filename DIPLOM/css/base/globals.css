@@ -1,0 +1,36 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+.page__body {
+  min-width: 375px;
+  background: var(--bg);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 360px;
+  padding: 0 10px;
+  margin-inline: auto;
+}
+
+@media (width <= 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width <=768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+.text-md-blue {
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #4abcec;
+}

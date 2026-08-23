@@ -1,0 +1,24 @@
+.main__aside-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.aside {
+  top: -20px;
+  position: absolute;
+  margin: 0 auto;
+  width: 139px;
+  height: 394px;
+  transform: translateY(-15%);
+  right: 80%;
+}
+
+.aside__text {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  rotate: -90deg;
+}

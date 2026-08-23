@@ -1,0 +1,128 @@
+.main__wrapper {
+  position: relative;
+}
+.main__content-shadow {
+  font-weight: 600;
+  font-size: 18px;
+  color: #747d81;
+}
+
+.main__main-content {
+  font-weight: 600;
+  font-size: 108px;
+  background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+.main__secondary-content {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 77px;
+}
+
+.main__content {
+  font-weight: 750;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 101px;
+}
+
+.main__content-accent--1 {
+  font-weight: 500;
+  line-height: 172%;
+  color: #00e0ff;
+}
+
+.main__content-accent--2 {
+  font-weight: 500;
+  line-height: 128%;
+  color: #00e0ff;
+}
+
+.main__neuron {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  width: 1211px;
+  height: 726px;
+  box-shadow: inset 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+  transform: translateX(-5%);
+}
+
+.main__diplom-picture {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  width: 71px;
+  height: 71px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.05) 100%
+  );
+}
+.main__diplom-img {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+.main__flex {
+  display: flex;
+  gap: 33px;
+}
+
+.main__text {
+  position: relative;
+}
+
+.main__modal-text {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  rotate: -90deg;
+}
+
+.main__button-content {
+  border-radius: 9px;
+  width: 479px;
+  height: 60px;
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  background: var(--main-button);
+  transition: color 0.2s;
+}
+.main__button-text--1 {
+  font-weight: 750;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main__button-text--2 {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #747d81;
+  rotate: -90deg;
+}
+
+@media (any-hover: hover) {
+  .main__button-content:hover {
+    background: var(--main-button-accent);
+    transition: var(--transition-time);
+  }
+}
+
+.main__button {
+  display: flex;
+  gap: 114px;
+}
