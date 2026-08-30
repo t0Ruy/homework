@@ -1,5 +1,13 @@
 .header__inner {
+  position: relative;
   display: flex;
+  left: 0;
+}
+
+.header__ellipse-accent {
+  position: absolute;
+  top: 0;
+  left: -18%;
 }
 
 .header__img {
@@ -23,14 +31,19 @@
 
 .header__neuron {
   top: 0;
-  left: 50%;
+  left: 56%;
   transform: translateX(-50%);
-  width: 668px;
-  height: 202px;
+  width: clamp(284px, 9.042rem + 37.15vw, 772px);
+  height: 127px;
   max-width: 100%;
   box-shadow: inset 58px 4px 191px 47px #000;
   mix-blend-mode: lighten;
   position: absolute;
+}
+@media (width <= 2100px) {
+  .header__neuron {
+    left: 50%;
+  }
 }
 
 @media (width > 1200px) {

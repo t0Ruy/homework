@@ -1,15 +1,103 @@
 .page {
   font-family: var(--font-family);
   font-weight: 500;
+  overflow-x: hidden;
 }
 .page__body {
   min-width: 375px;
-  background: var(--bg);
   min-height: 100vh;
   background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.section-1 {
+  height: auto;
+  min-height: 100vh;
+  background: var(--bg-1);
+  border-bottom: 3px solid #00e0ff;
+  box-shadow:
+    0 0 24px 0 #00e0ff,
+    0 4px 15px 0 #4ad9ec,
+    0 3px 15px 0 rgba(0, 224, 255, 0.93);
+}
+
+.section-2 {
+  overflow: hidden;
+  min-height: 130vh;
+  position: relative;
+  border-bottom: 3px solid #00e0ff;
+  background: var(--bg-2);
+}
+
+@media (width <= 992px) {
+  .section-2 {
+    height: 250vh;
+  }
+}
+
+@media (width <= 552px) {
+  .section-2 {
+    height: 360vh;
+  }
+}
+
+.section-3 {
+  min-height: 150vh;
+  background: var(--bg-1);
+  border-bottom: 3px solid #00e0ff;
+  overflow: hidden;
+
+  position: relative;
+}
+
+@media (width <= 992px) {
+  .section-3 {
+    height: 250vh;
+  }
+}
+
+.section-4 {
+  overflow: hidden;
+  min-height: 130vh;
+  position: relative;
+  border-bottom: 3px solid #00e0ff;
+  background: var(--bg-2);
+}
+
+@media (width <= 992px) {
+  .section-4 {
+    height: 250vh;
+  }
+}
+
+@media (width <= 552px) {
+  .section-4 {
+    height: 360vh;
+  }
+}
+
+.section-5 {
+  overflow: hidden;
+  min-height: 130vh;
+  position: relative;
+  border-bottom: 3px solid #00e0ff;
+  background: var(--bg-1);
+}
+
+@media (width <= 992px) {
+  .section-5 {
+    height: 250vh;
+  }
+}
+
+@media (width <= 552px) {
+  .section-5 {
+    height: 360vh;
+  }
 }
 
 .container {
+  max-height: 638px;
   max-width: 1200px;
   margin: 0 360px;
   padding: 0 10px;

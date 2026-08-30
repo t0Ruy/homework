@@ -1,24 +1,137 @@
-.main__aside-container {
+.aside-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
 .aside {
-  top: -20px;
-  position: absolute;
+  z-index: 99;
+  top: 100px;
+  left: 100px;
+  position: fixed;
   margin: 0 auto;
   width: 139px;
   height: 394px;
-  transform: translateY(-15%);
-  right: 80%;
+  transform: translateX(-15%);
+  padding-left: 20px;
 }
 
 .aside__text {
+  position: absolute;
+  bottom: 166px;
+  left: -50px;
   font-weight: 600;
   font-size: 10px;
   letter-spacing: 0.36em;
   text-transform: uppercase;
   color: #00e0ff;
   rotate: -90deg;
+  white-space: nowrap;
+}
+
+.aside__img--ellipse--1 {
+  position: relative;
+  display: block;
+}
+
+.aside__img--ellipse--1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0, 224, 255, 0.2);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aside__img--ellipse--2 {
+  position: relative;
+  display: block;
+}
+
+.aside__img--ellipse--2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0, 224, 255, 0.2);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aside__img--headphone {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  height: 42px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.aside__img--phone {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.aside__button-phone {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (width <= 1500px) {
+  .aside__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .aside__img--ellipse--1 {
+    position: absolute;
+    top: 20%;
+  }
+  .aside__img--headphone {
+    top: 31%;
+  }
+}
+
+.headphone-bg {
+  border-radius: 100%;
+  fill: #fff;
+  width: 139px;
+  height: 139px;
+}
+
+@media (width <= 992px) {
+  .aside {
+    top: 28%;
+    left: 65%;
+  }
+  .aside__button-phone {
+    visibility: visible;
+    opacity: 1;
+  }
+  .aside__img--phone {
+    top: 62%;
+    left: 50%;
+    height: 45px;
+  }
+  .aside__button-headphone {
+    margin-top: 200px;
+  }
+}
+
+@media (width <= 550px) {
+  .aside {
+    top: 22%;
+    left: 71%;
+  }
 }

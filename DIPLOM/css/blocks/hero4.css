@@ -1,0 +1,11 @@
+.hero-4__main-text {
+  padding-block: 117px 64px;
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero-4__main-text-accent {
+  color: var(--accent);
+}
